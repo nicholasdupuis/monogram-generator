@@ -1,0 +1,15 @@
+{
+  "name": "monogram-generator",
+  "version": "0.0.1",
+  "description": "A project to generate 3-initial monograms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node ./node_modules/serve/bin/serve.js -p 3000"
+  },
+  "author": "Nicholas Dupuis",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^5.1.4"
+  }
+}
