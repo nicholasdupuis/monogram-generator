@@ -1,12 +1,22 @@
-.sidebar, .content {
+body {
+  background-color: #eee;
+}
+
+.top-bar {
+  font-weight: bold;
+  background-color: white;
+}
+
+.site-container {
+  height: 100vh;
+}
+
+.sidebar, .content, .monogram-preview {
   padding: 8px;
 }
 
-.monogram-preview {
-  padding: 16px;
-}
-
 .directions {
+  margin: 0;
   list-style: none;
 }
 
@@ -20,4 +30,12 @@
 
 #monogram-canvas {
   border: 1px solid black;
+  background-color: white;
+}
+
+/** Media Queries **/
+@media only screen and (max-width: 640px) {
+  .site-container {
+    height: auto;
+  }
 }
