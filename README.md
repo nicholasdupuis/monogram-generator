@@ -1,6 +1,6 @@
 ### Monogram Generator
 
-A small project where the user will input a 3 initial string, and the application will generate a monogram that can be downloaded to use in embroidery applications. 
+A small project where the user will input a 3 initial string, and the application will generate a monogram that can be downloaded to use in embroidery applications.
 
 #### To Run Locally
 
@@ -14,3 +14,12 @@ A small project where the user will input a 3 initial string, and the applicatio
 * Add input validation
 * Generate monogram based on entry
 * Add HTML Canvas to save monogram as an image
+
+#### "Nice to haves"
+
+* Set up Grunt
+  * serve
+  * watch
+  * compile/minify js
+  * compress images for web
+* Break up html code into components
