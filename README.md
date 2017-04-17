@@ -2,6 +2,8 @@
 
 A small project where the user will input a 3 initial string, and the application will generate a monogram that can be downloaded to use in embroidery applications.
 
+App can be seen at [https://nicholasdupuis.github.io/monogram-generator/](https://nicholasdupuis.github.io/monogram-generator/)
+
 #### To Run Locally
 
 * Clone the repository
