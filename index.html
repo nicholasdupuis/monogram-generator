@@ -3,7 +3,9 @@
         <title>
             Monogram Generator
         </title>
+
         <meta charset="utf-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Foundation CSS -->
@@ -16,14 +18,59 @@
       <header>
         <div class="top-bar">
           <div class="top-bar-left">
-            Hello Header
+            Monogram Generator
           </div>
         </div>
       </header>
-      <div class="row">
-        <div class="large-12 columns">
-          Hello world
+
+      <!-- Main site container -->
+      <div class="row site-container">
+
+        <!-- Sidebar -->
+        <div class="small-12 medium-4 columns sidebar">
+          <ul class="directions">
+            How to use the Monogram Generator
+            <li>
+              Step one
+            </li>
+            <li>
+              Step two
+            </li>
+            <li>
+              Step three
+            </li>
+          </ul>
         </div>
+
+        <!-- Main content -->
+        <div class="small-12 medium-8 columns content">
+
+          <!-- Initial input box -->
+          <div class="row input-area">
+            <div class="small-12 columns">
+              <label for="initial-input">
+                Enter Your Initials
+              </label>
+              <input id="initial-input" name="initial-input" type="text"></input>
+              <div class="small-12 columns action-buttons">
+                <a href="#" class="button">
+                  Generate
+                </a>
+                <a href="#" class="button secondary">
+                  Reset
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monogram Preview Canvas -->
+          <div class="row">
+            <div class="small-12 columns monogram-preview">
+              <canvas id="monogram-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+
       </div>
     <body>
 </html>

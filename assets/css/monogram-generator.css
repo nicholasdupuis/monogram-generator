@@ -1,1 +1,23 @@
-/*TODO: Site styling*/
+.sidebar, .content {
+  padding: 8px;
+}
+
+.monogram-preview {
+  padding: 16px;
+}
+
+.directions {
+  list-style: none;
+}
+
+.action-buttons, .monogram-preview, .directions {
+  text-align: center;
+}
+
+#initial-input {
+  margin-bottom: 8px;
+}
+
+#monogram-canvas {
+  border: 1px solid black;
+}
