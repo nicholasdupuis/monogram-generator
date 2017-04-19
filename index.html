@@ -13,8 +13,10 @@
 
         <!-- CSS Overwrites -->
         <link rel="stylesheet" href="assets/css/monogram-generator.css">
+
     </head>
     <body>
+
       <header>
         <div class="top-bar">
           <div class="top-bar-left">
@@ -53,10 +55,13 @@
               </label>
               <input id="initial-input" name="initial-input" type="text"></input>
               <div class="small-12 columns action-buttons">
-                <a href="#" class="button">
+                <a href="#" class="button" onclick="generateMonogram()">
                   Generate
                 </a>
-                <a href="#" class="button secondary">
+                <a href="#" id="download-button" class="button info">
+                  Download
+                </a>
+                <a href="#" class="button secondary" onclick="resetMonogram()">
                   Reset
                 </a>
               </div>
@@ -72,5 +77,10 @@
         </div>
 
       </div>
-    <body>
+
+
+            <!-- JS -->
+            <script src="assets/js/monogram-generator.js"></script>
+
+    </body>
 </html>
