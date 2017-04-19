@@ -14,12 +14,7 @@ function generateMonogram() {
   // Clear the canvas if dirty
   !cleanCanvas ? _clearCanvas() : setTimeout(Function.prototype, 10000);
 
-  if (cleanCanvas) {
-    _drawOnCanvas(inputText);
-  } else {
-    _clearCanvas();
-    _drawOnCanvas(inputText);
-  }
+  _drawOnCanvas(inputText);
  }
 
 // Called when the 'Reset' button is clicked
