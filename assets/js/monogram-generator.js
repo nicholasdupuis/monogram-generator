@@ -23,18 +23,7 @@ function resetMonogram() {
   _clearCanvas();
 }
 
-// Downloads the canvas to user's device
-function downloadCanvas(link, filename) {
-    link.href = monogramCanvas.toDataURL();
-    link.download = filename;
+function downloadMonogram (elem) {
+  elem.href = monogramCanvas.toDataURL();
+  elem.download = 'monogram.png'
 }
-
-/**
- * Download the canvas as an image to the user's device.
- * Credit goes to https://jsfiddle.net/AbdiasSoftware/7PRNN/
- */
- document.getElementById('download-button').addEventListener('click', function() {
-   if (!cleanCanvas) {
-     downloadCanvas(this, 'monogram.png');
-   }
- }, false);
