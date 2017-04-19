@@ -4,7 +4,7 @@ const canvasContext = monogramCanvas.getContext('2d');
 
 // Initial setup of canvas
 canvasContext.textAlign = 'center';
-canvasContext.fillStyle = 'red';
+canvasContext.fillStyle = 'black';
 
 // Called when the 'Generate' button is clicked
 function generateMonogram() {
@@ -24,6 +24,8 @@ function resetMonogram() {
 }
 
 function downloadMonogram (elem) {
-  elem.href = monogramCanvas.toDataURL();
-  elem.download = 'monogram.png'
+  if (!cleanCanvas) {
+    elem.href = monogramCanvas.toDataURL();
+    elem.download = 'monogram.png'
+  }
 }
