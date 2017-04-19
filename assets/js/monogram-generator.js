@@ -4,6 +4,7 @@ const canvasContext = monogramCanvas.getContext('2d');
 
 // Initial setup of canvas
 canvasContext.textAlign = 'center';
+canvasContext.textBaseline = 'middle';
 canvasContext.fillStyle = 'black';
 
 // Called when the 'Generate' button is clicked
