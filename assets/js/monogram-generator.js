@@ -17,16 +17,16 @@ function _drawOnCanvas (text) {
   var centerY = monogramCanvas.height/2;
 
   //draw left initial
-  canvasContext.font = '24px serif';
-  canvasContext.fillText(initials[0], centerX - 30, centerY);
+  canvasContext.font = '48px serif';
+  canvasContext.fillText(initials[0], centerX - 50, centerY);
 
   //draw center initial
-  canvasContext.font = '36px serif';
+  canvasContext.font = '72px serif';
   canvasContext.fillText(initials[2], centerX, centerY);
 
   //draw right initial
-  canvasContext.font = '24px serif';
-  canvasContext.fillText(initials[1], centerX + 30, centerY);
+  canvasContext.font = '48px serif';
+  canvasContext.fillText(initials[1], centerX + 50, centerY);
 
   cleanCanvas = false;
 }
