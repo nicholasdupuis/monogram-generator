@@ -6,43 +6,13 @@ const canvasContext = monogramCanvas.getContext('2d');
 canvasContext.textAlign = 'center';
 canvasContext.fillStyle = 'red';
 
-// Used to determine whether or not the canvas currently has text on it
-var cleanCanvas = true;
-
-// Draws text in the center of the canvas
-function _drawOnCanvas (text) {
-  var initials = text.substring(0,3).split('');
-
-  var centerX = monogramCanvas.width/2;
-  var centerY = monogramCanvas.height/2;
-
-  //draw left initial
-  canvasContext.font = '48px serif';
-  canvasContext.fillText(initials[0], centerX - 50, centerY);
-
-  //draw center initial
-  canvasContext.font = '72px serif';
-  canvasContext.fillText(initials[2], centerX, centerY);
-
-  //draw right initial
-  canvasContext.font = '48px serif';
-  canvasContext.fillText(initials[1], centerX + 50, centerY);
-
-  cleanCanvas = false;
-}
-
-// Clears out the canvas
-function _clearCanvas () {
-  canvasContext.clearRect(0, 0, monogramCanvas.width, monogramCanvas.height);
-  cleanCanvas = true;
-}
-
 // Called when the 'Generate' button is clicked
 function generateMonogram() {
   // Get the input value text
-  var inputText = document.getElementById('initial-input').value;
+  var inputText = _getInputText();
 
-  !cleanCanvas ? _clearCanvas() : console.log('no op');
+  // Clear the canvas if dirty
+  !cleanCanvas ? _clearCanvas() : setTimeout(Function.prototype, 10000);
 
   if (cleanCanvas) {
     _drawOnCanvas(inputText);
@@ -54,9 +24,7 @@ function generateMonogram() {
 
 // Called when the 'Reset' button is clicked
 function resetMonogram() {
-  // Clear text box
-  document.getElementById('initial-input').value = '';
-
+  _deleteInputText();
   _clearCanvas();
 }
 
@@ -72,6 +40,6 @@ function downloadCanvas(link, filename) {
  */
  document.getElementById('download-button').addEventListener('click', function() {
    if (!cleanCanvas) {
-     downloadCanvas(this, 'test.png');
+     downloadCanvas(this, 'monogram.png');
    }
  }, false);
