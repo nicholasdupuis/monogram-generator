@@ -9,12 +9,11 @@ canvasContext.fillStyle = 'black';
 
 // Called when the 'Generate' button is clicked
 function generateMonogram() {
-  // Get the input value text
-  var inputText = _getInputText();
-
   // Clear the canvas if dirty
   !cleanCanvas ? _clearCanvas() : setTimeout(Function.prototype, 10000);
 
+  // Get the input text and draw it
+  var inputText = _getInputText();
   _drawOnCanvas(inputText);
  }
 
