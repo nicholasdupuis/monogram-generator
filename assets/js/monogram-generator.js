@@ -3,7 +3,6 @@ const monogramCanvas = document.getElementById('monogram-canvas');
 const canvasContext = monogramCanvas.getContext('2d');
 
 // Initial setup of canvas
-canvasContext.font = '30px Arial';
 canvasContext.textAlign = 'center';
 canvasContext.fillStyle = 'red';
 
@@ -12,7 +11,23 @@ var cleanCanvas = true;
 
 // Draws text in the center of the canvas
 function _drawOnCanvas (text) {
-  canvasContext.fillText(text, monogramCanvas.width/2, monogramCanvas.height/2);
+  var initials = text.substring(0,3).split('');
+
+  var centerX = monogramCanvas.width/2;
+  var centerY = monogramCanvas.height/2;
+
+  //draw left initial
+  canvasContext.font = '24px serif';
+  canvasContext.fillText(initials[0], centerX - 30, centerY);
+
+  //draw center initial
+  canvasContext.font = '36px serif';
+  canvasContext.fillText(initials[2], centerX, centerY);
+
+  //draw right initial
+  canvasContext.font = '24px serif';
+  canvasContext.fillText(initials[1], centerX + 30, centerY);
+
   cleanCanvas = false;
 }
 
@@ -26,6 +41,8 @@ function _clearCanvas () {
 function generateMonogram() {
   // Get the input value text
   var inputText = document.getElementById('initial-input').value;
+
+  !cleanCanvas ? _clearCanvas() : console.log('no op');
 
   if (cleanCanvas) {
     _drawOnCanvas(inputText);
