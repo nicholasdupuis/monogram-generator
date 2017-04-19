@@ -11,17 +11,6 @@ App can be seen at [https://nicholasdupuis.github.io/monogram-generator/](https:
 * After the install, enter `npm run serve` in your command line and navigate to `localhost:3000` in your web browser
 
 #### Roadmap
-
-* Add ability to enter initials
 * Add input validation
-* Generate monogram based on entry
-* Add HTML Canvas to save monogram as an image
-
-#### "Nice to haves"
-
-* Set up Grunt
-  * serve
-  * watch
-  * compile/minify js
-  * compress images for web
-* Break up html code into components
+* Add monogram font
+* Style monogram when generating
