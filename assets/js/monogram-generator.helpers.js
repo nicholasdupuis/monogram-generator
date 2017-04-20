@@ -10,16 +10,16 @@ function _drawOnCanvas(text) {
     var centerY = monogramCanvas.height/2;
 
     //draw left initial
-    canvasContext.font = '680px monogramkk';
-    canvasContext.fillText(initials[0], centerX - 400, centerY);
+    canvasContext.font = '760px monogramkk';
+    canvasContext.fillText(initials[0], centerX - 350, centerY);
 
     //draw center initial
-    canvasContext.font = '920px monogramkk';
+    canvasContext.font = '1000px monogramkk';
     canvasContext.fillText(initials[2], centerX, centerY);
 
     //draw right initial
-    canvasContext.font = '680px monogramkk';
-    canvasContext.fillText(initials[1], centerX + 400, centerY);
+    canvasContext.font = '760px monogramkk';
+    canvasContext.fillText(initials[1], centerX + 350, centerY);
 
     cleanCanvas = false;
   }
