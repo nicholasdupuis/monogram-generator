@@ -54,16 +54,16 @@
                 Enter Your Initials
               </label>
               <input id="initial-input" name="initial-input" type="text"></input>
-              <div class="small-12 columns action-buttons">
+              <div class="small-12 columns generate-btn">
                 <a href="#" class="button" onclick="generateMonogram()">
                   Generate
                 </a>
-                <a href="#" class="button info" onclick="downloadMonogram(this)">
+                <!--<a href="#" class="button info" onclick="downloadMonogram(this)">
                   Download
                 </a>
                 <a href="#" class="button secondary" onclick="resetMonogram()">
                   Reset
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
@@ -75,6 +75,14 @@
           <div class="row">
             <div class="small-12 columns monogram-preview">
               <canvas id="monogram-canvas" width="1500" height="1500"></canvas>
+              <div class="download-reset-btns">
+                  <a href="#" class="button info" onclick="downloadMonogram(this)">
+                    Download
+                  </a>
+                  <a href="#" class="button secondary" onclick="resetMonogram()">
+                    Reset
+                  </a>
+                </div>
             </div>
           </div>
         </div>
