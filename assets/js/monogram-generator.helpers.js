@@ -1,3 +1,12 @@
+// Set the canvas to a constant since this will never change
+const monogramCanvas = document.getElementById('monogram-canvas');
+const canvasContext = monogramCanvas.getContext('2d');
+
+// Initial setup of canvas
+canvasContext.textAlign = 'center';
+canvasContext.textBaseline = 'middle';
+canvasContext.fillStyle = 'black';
+
 // Used to determine whether or not the canvas currently has text on it
 var cleanCanvas = true;
 
@@ -23,6 +32,10 @@ function _drawOnCanvas(text) {
 
     cleanCanvas = false;
   }
+}
+
+function isCanvasClean() {
+  return cleanCanvas;
 }
 
 // Clears out the canvas

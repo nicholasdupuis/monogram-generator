@@ -1,16 +1,9 @@
-// Set the canvas to a constant since this will never change
-const monogramCanvas = document.getElementById('monogram-canvas');
-const canvasContext = monogramCanvas.getContext('2d');
-
-// Initial setup of canvas
-canvasContext.textAlign = 'center';
-canvasContext.textBaseline = 'middle';
-canvasContext.fillStyle = 'black';
-
 // Called when the 'Generate' button is clicked
 function generateMonogram() {
   // Clear the canvas if dirty
-  !cleanCanvas ? _clearCanvas() : setTimeout(Function.prototype, 10000);
+  if (!isCanvasClean()) {
+    _clearCanvas();
+  }
 
   // Get the input text and draw it
   var inputText = _getInputText();
@@ -23,6 +16,7 @@ function resetMonogram() {
   _clearCanvas();
 }
 
+// Called when download button is clicked
 function downloadMonogram (elem) {
   if (!cleanCanvas) {
     elem.href = monogramCanvas.toDataURL();
