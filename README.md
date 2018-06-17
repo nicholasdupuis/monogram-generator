@@ -9,8 +9,3 @@ App can be seen at [https://nicholasdupuis.github.io/monogram-generator/](https:
 * Clone the repository
 * In your terminal, from the root directory of the project, run `npm install`
 * After the install, enter `npm run serve` in your command line and navigate to `localhost:3000` in your web browser
-
-#### Roadmap
-* Add input validation
-* Add monogram font
-* Style monogram when generating
