@@ -1,6 +1,6 @@
 ### Monogram Generator
 
-A small project where the user will input a 3 initial string, and the application will generate a monogram that can be downloaded to use in embroidery applications.
+A small project I put together to learn HTML5 Canvas. The user will input a 3 letter string of someone's initials, and the application will generate a monogram that can be downloaded to use in embroidery applications.
 
 App can be seen at [https://nicholasdupuis.github.io/monogram-generator/](https://nicholasdupuis.github.io/monogram-generator/)
 
